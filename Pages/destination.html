@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <script src="../Javascript/script.js"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body id="page2">
+
+
+  <header>
+    <nav>
+      <figure class="logo-nav">
+        <img src="../assets/shared/logo.svg" alt="logo-company"/>
+      </figure>
+      <ul class="navigation">
+        <li><a href="../index.html"><strong>00</strong> Home</a></li>
+        <li class="marked"><a href="#"><strong>01</strong> Destination</a></li>
+        <li><a href="#"><strong>02</strong> Crew</a></li>
+        <li><a href="#"><strong>03</strong> Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <figure class="dest-image left">
+        <h1><span class="transparent">01</span> Pick your destination</h1>
+        <img id="planet-img" src="../assets/destination/image-moon.webp" alt="destination-image" >
+    </figure>
+    <div class="destination right">
+        <div class="destination-select">
+            <div class="destinations marked" onclick="changeData(0)"><span>Moon</span></div>
+            <div class="destinations" onclick="changeData(1)"><span>Mars</span></div>
+            <div class="destinations" onclick="changeData(2)"><span>Europa</span></div>
+            <div class="destinations" onclick="changeData(3)"><span>Titan</span></div>
+        </div>
+        <h2 id="dest-planet">Moon</h2>
+
+        <p id="dest-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        
+        <hr/>
+
+        <div class="infos">
+            <div class="info"> 
+                <h3>Average distance</h3>
+                <p id="distance">384,400 km</p>
+            </div>
+            
+            <div class="info"> 
+                <h3>Estimate travel time</h3>
+                <p id="time">3 days.</p>
+            </div>
+        </div>
+    
+    </div>
+  
+  </main>
+  
+</body>
+</html>
