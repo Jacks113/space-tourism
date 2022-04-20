@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <script src="../Javascript/script.js"></script>
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body id="page4">
+
+
+  <header>
+    <nav>
+      <figure class="logo-nav">
+        <img src="../assets/shared/logo.svg" alt="logo-company"/>
+      </figure>
+      <ul class="colored-nav navigation">
+        <li><a href="../index.html"><strong>00</strong> Home</a></li>
+        <li ><a href="./destination.html"><strong>01</strong> Destination</a></li>
+        <li><a href="../Pages/crew.html"><strong>02</strong> Crew</a></li>
+        <li class="marked"><a href="#"><strong>03</strong> Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <figure id="crew-fig" class="dest-image crew">
+        <img id="technology-img" src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="technology-image" >
+    </figure>
+    <div  class="technology left crew">
+        <h1><span class="transparent">02</span> Space launch 101</h1>
+        <div class="crew-info technology-info">
+            <h3 id="technology-title">The terminology of...</h2>
+            <h2 id="technology-name">Launch vehicle</h2>
+        
+
+            <p id="technology-description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+        
+
+
+        <div class="technology-select crew">
+            <div onclick="changeData(0)" class="rounded-button selected-button">
+                <span>1</span>
+            </div>
+            
+            <div onclick="changeData(1)" class="rounded-button unselected-button">
+                <span>2</span>
+            </div>
+
+            <div onclick="changeData(2)" class="rounded-button unselected-button">
+                <span>2</span>
+            </div>
+        </div>
+
+
+        
+        </div>
+    
+    </div>
+  
+  </main>
+  
+</body>
+</html>
