@@ -51,7 +51,7 @@ function changeCrew(crewIndex){
 
 
 
-function changeData(technologyIndex){
+function changeTechnology(technologyIndex){
     const travel = fetch("../data.json").then(response => response.json()).then(data =>
         {
             document.getElementById("technology-name").innerHTML= data.technology[technologyIndex].name;
