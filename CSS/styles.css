@@ -183,6 +183,7 @@ p{
     text-align: center;
     justify-content: center;
     border-radius: 50%;
+    border: 1px solid transparent;
     position: relative;
     top: 50vh;
     left: 30vw;
@@ -197,9 +198,6 @@ p{
     cursor: pointer;
 }
 
-.explore-button :hover{
-    box-shadow: 1em;
-}
 
 
 
