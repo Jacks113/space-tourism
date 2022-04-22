@@ -530,6 +530,27 @@ low-bottom{
 }
 
 @media only screen and (max-width:1000px) {
+
+    #page1{
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        overflow: auto;
+    }
+    
+    #page2{
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        overflow: auto;
+    }
+
+    #page3{
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+        overflow: auto;
+    }
+
+    #page4{
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+        overflow: auto;
+    }
+
     body{
         font-size: 12px;
     }
@@ -544,6 +565,7 @@ low-bottom{
 
     .navigation{
         width: 60%;
+        background: rgba(165, 165, 165, 0.063);
     }
     .navigation li{
         padding: 3em 10px;
@@ -614,6 +636,30 @@ low-bottom{
 }
 
 @media only screen and (max-width:800px) {
+    #page1{
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        overflow: auto;
+    }
+    
+    #page2{
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        overflow: auto;
+    }
+
+    #page3{
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        overflow: auto;
+    }
+
+    #page4{
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
+        overflow: auto;
+    }
+
+    .navigation{
+        background: rgba(165, 165, 165, 0.063);
+    }
+
     .view{
         display: none;
     }
