@@ -13,9 +13,11 @@ function changeData(planetIndex){
             elements.forEach(element => {
                 if (element.classList.contains("marked")){
                     element.classList.remove("marked");
+                    element.classList.add("unmarked");
                 }
                 if (element === elements[planetIndex]){
                     element.classList.add("marked");
+                    element.classList.remove("unmarked");
                 }
             });
         }
