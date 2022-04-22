@@ -586,7 +586,21 @@ low-bottom{
     }
 
     .dest-image{
-        width: 100%;
+        width: 90%;
+        height: 40vh;
+        top: 0;
+    }
+
+    .dest-image img{
+        height: 60%;
+    }
+
+    .dest-description{
+        float: none;
+    }
+
+    .right{
+        top: 0;
     }
 
     .destination {
