@@ -623,4 +623,8 @@ low-bottom{
     .explore-button{
         left: 0em;
     }
+
+    .description{
+        left: -1em;
+    }
 }
