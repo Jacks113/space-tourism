@@ -1,690 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-
+/* -------------------- */
+/* ------- Reset ------ */
+/* -------------------- */
 
 *{
+    padding: 0;
     margin: 0;
-    padding: 0em;
-    box-sizing: border-box;
 }
 
+
+/* -------------------- */
+/* ---- Font import --- */
+/* -------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bellefair&display=swap');
+
+
+/* -------------------- */
+/* - Body/Main styles - */
+/* -------------------- */
+
 body{
-    height: 100vh;
-    /* overflow: hidden; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 15px;
-    overflow: hidden;
-    background-size: 100% 100%;
+    font-size: 13px; 
 }
 
 #page1{
+    height: 100vh;
+    overflow-y: hidden;
+
     background-image: url("../assets/home/background-home-desktop.jpg");
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #page2{
-    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
 #page3{
-    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #page4{
+    height: 100vh;
+    overflow: hidden;
+
     background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: grid;
+
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(15, 100px);
+}
+
+/* ----------------------------- */
+/*----- Navigation styles ------ */
+/* ----------------------------- */
+
+nav{
+
+    width: 100vw;
+
+    margin-top: 1%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    width: 50%;
+    height: 100%;
+    
+    backdrop-filter: blur(50px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+    align-items: center;
+
+
+
+    list-style-type: none;
+    font-size: 1.3em;
+    
+}
+
+.navigation li{
+    
+    color: gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
 
 }
 
-h1{
-    font-family: 'Bellefair', sans-serif;
-    justify-self: left;
-    padding-bottom: 1em;
-    font-size: 1.5em;
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------- */
+/*------- home text styles ----- */
+/* ----------------------------- */
+
+.description{
+    color: whitesmoke;
+
+    grid-column: 4 / 15;
+    grid-row: 3 / 8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#explore{
+    height: 12em;
+    width: 12em;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    grid-column: 17;
+    grid-row: 6;    
+
     text-transform: uppercase;
 }
-h2{
-    font-family: 'Bellefair', sans-serif;
-    font-size: 4em;
-}
-h3{
-    font-family: 'Bellefair ', sans-serif;
-    /* font-size: 56px; */
-}
-h4{
-    font-family: 'Bellefair', sans-serif;
-    font-size: 32px;
-}
-h5{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
-} 
 
-
-p{
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-.description {
-    line-height: 1.5;
-    width: 30%;
-    color: whitesmoke;
-    position: relative;   
-}
-
-.destination hr{
-    margin: 2em 0; 
-    opacity: 0.5;
-}
-
-.destination p{
-    line-height: 1.5;
+.description p{
+    font-family: 'Barlow', sans-serif;
+    width: 50%;
+    font-size: 1.5em;
+    line-height: 1.8;
 }
 
 
 .description p:first-of-type{
+    font-size: 2.5em;
     text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
 }
-
-.description::after{
-    content: "";
-    clear: both;
-}
-
-.left{
-    float: left;
-    top: 20vh;
-    margin-left: 10%;
-}
-
-.right{
-    float: right;
-    top: 20vh;
-    margin-right: 1%;
-}
-
-
-
-.destination{
-    width: 30%;
-    height: 70vh;
-    color: whitesmoke;
-    position: relative;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.destination::after{
-    content: "";
-    clear: both;
-}
-
-
-.destination hr{
-    margin: 2em 0; 
-    opacity: 0.5;
-}
-
-.destination p{
-    line-height: 1.5;
-}
-
-.dest-image{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 5%;
-    top: 18vh;
-    width: 50%;
-    height: 65vh;
-    color: whitesmoke;
-    position: relative;   
-}
-
-.dest-image h1{
-    justify-self: left;
-    padding-bottom: 1em;
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
-.transparent{
-    opacity: 0.4;
-}
-
-.dest-image img {
-    height: 90%;
-}
-
-.explore{
-    padding: 2em;
-    height: 3em;
-    width: 3em;
-    background-color: white;
-    color: black;
-}
-
-.destination-select{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.destination-select div{
-    width: 15%;
-    padding: 1em;
-}
-
-.destination-select .planet div:hover{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
-
-
-}
-
-.explore-button{
-    background-color: white;
-    width: 13em;
-    height: 13em;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 3em solid transparent;
-
-    position: relative;
-    top: 50vh;
-    left: 30vw;
-    text-transform: uppercase;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Bellefair ', sans-serif;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: 5ms smooth;
-}
-
-
 
 
 .description h1{
+    font-family: 'Bellefair', serif;
+    font-size: 12em;
     text-transform: uppercase;
-    font-size: 10vw;
-    padding: 0;
 }
 
-.description p{
-    font-size: 1.5em;
-}
-
-.description p:first-of-type, .destination p:first-of-type{
-    font-size: 1.5em;
-}
-
-.description p:first-of-type, .destination p:first-of-type{
-    text-align: justify;
-}
-
-.destinations:hover{
-    cursor: pointer;
-}
-
-.unmarked:hover{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
-}
-
-.destinations span :hover{
-    cursor: pointer;
-}
-
-.infos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav{
-    margin-top: 2vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-.logo-nav img{
-    height: 3vw;
-    width: 3vw;
-    margin-left: 15%;
-    cursor: pointer;
-}
-
-.navigation{
-    /* background-color: rgb(231, 192, 192); */
-
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    background: transparent;
-
-    width: 50%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-    list-style-type: none;
-}
-
-.colored-nav{
-    background: rgba(165, 165, 165, 0.063);
-}
-
-
-
-
-.navigation li a {
-    color: hsl(0, 0%, 96%);
-    text-decoration: none;
-}
-
-.navigation li a:hover {
-    color: hsl(0, 0%, 96%);
-    text-decoration: none;
-}
-
-.navigation li{
-    padding: 1.2em 10px;
-    width: 20%;
-    text-align: center;
-}
-
-.marked{
-    border-bottom: 2px solid white;
-}
-
-.nav ::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-#dest-descript{
-    margin-right: 10%;
-}
-
-.right::after{
-    content: "";
-    clear: both;
-}
-.left::after{
-    content: "";
-    clear: both;
-}
-
-/* --------------------- */
-/*       Crew page       */
-/* --------------------- */
-
-
-#crew-h1{
-    font-size: 2.5em;
-}
-
-#crew-title, #crew-name, #technology-name, #technology-title{    
-    text-transform: uppercase;
-   
-}
-
-#crew-title{
-    font-size: 1.2em;
-    /* font-size: "Bellefair Regular", sans-serif; */
-}
-
-#crew-name{
-    font-size: 2em;
-}
-
-.crew-info{
-    line-height: 2;
-}
-
-
-.radio {
-    margin: 0.5rem;
-  }
-  .radio input[type=radio] {
-    position: absolute;
-    opacity: 0;
-  }
-  .radio input[type=radio] + .radio-label:before {
-    content: "";
-    background: #979797;
-    border-radius: 100%;
-    border: 1px solid #979797;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    position: relative;
-    top: -0.2em;
-    margin-right: 1em;
-    vertical-align: top;
-    cursor: pointer;
-    text-align: center;
-    text-align: center;
-    transition: all 250ms ease;
-  }
-  .radio input[type=radio]:checked + .radio-label:before {
-    background-color: white;
-    box-shadow: inset 0 0 0 4px white;
-  }
-  .radio input[type=radio]:focus + .radio-label:before {
-    outline: none;
-    border-color: #3197EE;
-  }
-  .radio input[type=radio]:disabled + .radio-label:before {
-    box-shadow: inset 0 0 0 4px #f4f4f4;
-    border-color: #b4b4b4;
-    background: #b4b4b4;
-  }
-  .radio input[type=radio] + .radio-label:empty:before {
-    margin-right: 0;
-  }
-
-#crew{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 70vh;
-    
-}
-
-#tech-fig{
-    float: right;
-    top: 12vh;
-    margin-right: 0;
-    height: 75vh;
-    max-width: 35vw;
-}
-
-#crew-fig{
-    float: right;
-    top: 22vh;
-    margin-right: 1%;
-    height: 75vh;
-    max-width: 35vw;
-}
-
-
-#crew-img, #technology-img{
-    width: 99%;
-}
-
-low-bottom{
-    top: 30vh;
-}
-
-/* --------------- */
-/* Technology page */
-/* --------------- */
-
-
-
-
-.technology{
-    width: 38%;
-    height: 70vh;
-    color: whitesmoke;
-    position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-}
-
-.technology p{
-    font-size: 1.5em;
-}
-
-.technology h2{
-    font-size: 2em;
-}
-
-.technology-info{
-    width: 70%;
-    height: 80%;
-    float: right;
-}
-
-.technology-select{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 20%;
-    height: 70%;
-    /* float: left; */
-    cursor: pointer;
-}
-
-
-.rounded-button{
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 4em;
-    height: 4em;
-    background-color: #0B0D17;
-    border-radius: 50%;
-}
-
-.unselected-button{
-    border: 2px solid rgba(132, 128, 128, 0.4);
-}
-
-
-.selected-button{
-    background-color: #FFFFFF;
-    color: #0B0D17;
-}
-
-.unselected-button:hover{
-    border: 2px solid #FFFFFF;
-}
-
-@media only screen and (max-width: 1200px) {
-    .dest-image{
-        width: 45%;
-    }
-
-    .dest-image img{
-        height: 75%;
-    }
-
-    #crew-fig{
-        top: 26vh;
-    }
-
-}
-
-@media only screen and (max-width:1000px) {
-
-    #page1{
-        background-image: url('../assets/home/background-home-tablet.jpg');
-        overflow: auto;
-    }
-    
-    #page2{
-        background-image: url('../assets/destination/background-destination-tablet.jpg');
-        overflow: auto;
-    }
-
-    #page3{
-        background-image: url('../assets/crew/background-crew-tablet.jpg');
-        overflow: auto;
-    }
-
-    #page4{
-        background-image: url('../assets/technology/background-technology-tablet.jpg');
-        overflow: auto;
-    }
-
-    body{
-        font-size: 12px;
-    }
-
-    #page1 main{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-    }
-
-
-    .navigation{
-        width: 60%;
-        background: rgba(165, 165, 165, 0.063);
-    }
-    .navigation li{
-        padding: 3em 10px;
-    }
-¸
-    .navigation li a strong{
-        display: none;
-    }
-
-    .logo-nav{
-        height: 4em;
-        width: 4em;
-    }
-
-    .logo-nav img{
-        height: 100%;
-        width: 100%;
-    }
-
-    .dest-image{
-        width: 90%;
-        height: 40vh;
-        top: 0;
-    }
-
-    .dest-image img{
-        height: 60%;
-    }
-
-    .dest-description{
-        float: none;
-    }
-
-    .right{
-        top: 0;
-    }
-
-    .destination {
-        width: 80%;
-    }
-
-    .explore-button{
-        top: 0;
-        left: 0;
-        margin-top: 10em;
-        left: 3em;
-    }
-
-    #page2{
-        background-image: url('../assets/destination/background-destination-tablet.jpg');
-        overflow: auto;
-    }
-    
-    .description{
-        width: 80%;
-        height: 30%;
-        text-align: justify ;
-        float: none;
-        top: 10vh;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .description p{
-        text-align:center;
-    }
-
-    .description p:first-of-type{
-        font-size: 2em;
-    }
-    
-    .description h1{
-        font-size: 7em;
-    }
-
-    .description h1, .description p:first-of-type{
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width:800px) {
-    #page1{
-        background-image: url('../assets/home/background-home-mobile.jpg');
-        overflow: auto;
-    }
-    
-    #page2{
-        background-image: url('../assets/destination/background-destination-mobile.jpg');
-        overflow: auto;
-    }
-
-    #page3{
-        background-image: url('../assets/crew/background-crew-mobile.jpg');
-        overflow: auto;
-    }
-
-    #page4{
-        background-image: url('../assets/technology/background-technology-mobile.jpg');
-        overflow: auto;
-    }
-
-    .navigation{
-        background: rgba(165, 165, 165, 0.063);
-    }
-
-    .view{
-        display: none;
-    }
-    .navigation{
-        width: 70%;
-    }
-    .explore-button{
-        left: 0em;
-    }
-
-    .description{
-        left: -1em;
-    }
-}
