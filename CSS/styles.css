@@ -620,10 +620,20 @@ nav{
         grid-column: 2 / 10;
         grid-row: 2 / 8;
     }
+
+    .navigation{ 
+        width: 60%;
+    }
+    
+    .view{
+        display: none;
+    }
 }
 
 
 @media only screen and (max-width: 800px){
+
+    
 
     #page1{
         background-image: url("../assets/home/background-home-tablet.jpg");
@@ -633,11 +643,7 @@ nav{
         overflow: auto;
     }
 
-    #page1{
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(15, 1fr);
-    }
+    
 
 
     .description{
