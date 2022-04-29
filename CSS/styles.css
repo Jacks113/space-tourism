@@ -370,11 +370,15 @@ nav{
 
 #crew-fig{
     grid-column: 11 / 19;
-    grid-row: 2 / 9;
+    grid-row: 1 / 11;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#crew-fig img{
+    width: 80%;
 }
 
 .crew-info-container {
@@ -428,6 +432,131 @@ nav{
     display: none;
 }
 
+
+
+/* ------------------------------- */
+/*- technology page input tablet - */
+/* ------------------------------- */
+
+#tech-fig{
+    grid-column: 11 / 21;
+    grid-row: 2 / 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tech-fig img{
+    align-self: flex-end;
+    width: 80%;
+}
+
+
+/* ----------------------------- */
+/*- technology selecting div --- */
+/* ----------------------------- */
+
+.technology{
+    grid-column: 2 / 10;
+    grid-row: 2 / 8;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.technology h1{
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.technology-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 80%;
+}
+
+.technology-info{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#technology-description{
+    font-size: 1.4em;
+}
+
+#technology-title, #technology-name{
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#technology-title{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+}
+
+#technology-name{
+    font-family: 'Bellefair', serif;
+    font-size: 4em;
+}
+
+#technology-description{
+    line-height: 2;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+
+.technology-select{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    /* height: 2em; */
+    /* float: left; */
+    cursor: pointer;
+}
+
+
+.rounded-button{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    background-color: #0B0D17;
+    border-radius: 50%;
+    margin-bottom: 4em;
+}
+
+.unselected-button{
+    border: 2px solid rgba(132, 128, 128, 0.4);
+}
+
+
+.selected-button{
+    background-color: #FFFFFF;
+    color: #0B0D17;
+}
+
+.unselected-button:hover{
+    border: 2px solid #FFFFFF;
+}
+
 /* ----------------------------- */
 /*------ radio input tablet ---- */
 /* ----------------------------- */
@@ -472,6 +601,11 @@ nav{
   .radio input[type=radio] + .radio-label:empty:before {
     margin-right: 0;
   }
+
+/* ----------------------------- */
+/*--- destination page styles -- */
+/* ----------------------------- */
+
 
 
 /* ----------------------------- */
