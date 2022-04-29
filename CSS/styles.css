@@ -35,6 +35,10 @@ body{
     background-size: cover;
 }
 
+.colored-nav{
+    background-color: rgba(151, 151, 151, 0.16);
+}
+
 #page2{
     height: 100vh;
     overflow: hidden;
