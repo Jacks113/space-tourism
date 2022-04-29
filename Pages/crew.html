@@ -23,11 +23,11 @@
       <figure class="logo-nav">
         <img src="../assets/shared/logo.svg" alt="logo-company"/>
       </figure>
-      <ul class="colored-nav navigation">
-        <li><a href="../index.html"><span class="view"><strong>00</strong></span> Home</a></li>
-        <li class="destinations"><a href="../Pages/destination.html"><span class="view"><strong>01</strong></span> Destination</a></li>
-        <li class="marked destinations"><a href="#"><span class="view"><strong>02</strong></span> Crew</a></li>
-        <li><a href="./technology.html"><span class="view"><strong>03</strong></span> Technology</a></li>
+      <ul class="navigation">
+        <li><a href="../index.html"><span class="view"><strong class="transparent">00</strong></span> Home</a></li>
+        <li><a href="./destination.html"><span class="view"><strong class="transparent">01</strong></span> Destination</a></li>
+        <li class="marked"><a href="#"><span class="view"><strong class="transparent">02</strong></span> Crew</a></li>
+        <li><a href="./technology.html"><span class="view"><strong class="transparent">03</strong></span> Technology</a></li>
       </ul>
     </nav>
   </header>
@@ -37,21 +37,21 @@
         <img id="crew-img" src="../assets/crew/image-douglas-hurley.webp" alt="destination-image" >
         <hr class="hr-view" />
     </figure>
-    <div  class="destination left crew">
+    <div  class="destination-crew">
         <h1 ><span class="transparent">02</span> Meet your crew</h2>
-        <div class="crew-info">
+ 
+        <div class="crew-info-container">
+          <div class="crew-info">
             <h3 id="crew-title">Commander</h2>
             <h2 id="crew-name">Douglas Hurley</h2>
         
 
             <p id="crew-description">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-        </div>
-        
-
-
-        <div class="destination-select crew">
+          </div>
+          
+          <div class="destination-select crew">
             <div class="radio" onclick="changeCrew(0)">
-                <input id="radio-1"  name="radio" type="radio" checked>
+                <input id="radio-1" value="1"  name="radio" type="radio" checked>
                 <label for="radio-1" class="radio-label"></label>
             </div>
     
@@ -70,6 +70,12 @@
                 <label for="radio-4" class="radio-label"></label>
             </div>
             </div>
+        </div>
+       
+        
+
+
+        
 
 
         
