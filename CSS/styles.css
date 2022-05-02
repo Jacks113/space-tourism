@@ -278,12 +278,12 @@ nav{
 }
 
 .destinations {
-    width: 10%;
+    width: fit-content;
     height: 98%;
 
     font-size: 1.4em;
     padding: 0 0.5em 0.5em 0.5em;
-    margin-right: 10px;
+    margin-right: 1em;
     text-transform: uppercase;
     
     color: whitesmoke;
@@ -327,7 +327,7 @@ nav{
 }
 
 .infos{
-    width: 75%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -609,12 +609,6 @@ nav{
   .radio input[type=radio] + .radio-label:empty:before {
     margin-right: 0;
   }
-
-/* ----------------------------- */
-/*--- destination page styles -- */
-/* ----------------------------- */
-
-
 
 /* ----------------------------- */
 /*------ media query tablet ---- */
