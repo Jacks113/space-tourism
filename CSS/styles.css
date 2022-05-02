@@ -323,6 +323,7 @@ nav{
 }
 
 .planet-info p{
+
     font-size: 2em;
 }
 
@@ -712,6 +713,13 @@ nav{
         grid-column: 4 / 19;
         grid-row: 8 / 15;
     }
+    }
+
+
+    h1{
+        font-family: 'Barlow Condensed', sans-serif; 
+        font-weight:200;   
+        font-size: 20px;
     }
 
 @media only screen and (max-width: 1000px){
