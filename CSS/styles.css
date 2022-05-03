@@ -102,7 +102,7 @@ nav{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;    
+    justify-content:space-evenly;    
     align-items: center;
 
 
@@ -114,7 +114,7 @@ nav{
 
 .navigation li{
     height: 100%;
-    width: 25%;
+    width: 15%;
 
     color: gray;
 
@@ -124,7 +124,10 @@ nav{
     align-items: center;
     
     text-align: center;
+}
 
+.navigation li:last-of-type{
+    margin-right: 3em;
 }
 
 .navigation a{
@@ -618,6 +621,24 @@ nav{
 
 @media only screen and (max-width: 1100px){
 
+    .navigation li{
+        height: 100%;
+        width: 25%;
+    
+        color: gray;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+    }
+    
+    .navigation li:last-of-type{
+        margin-right: none;
+    }
+
     /* ----------------------------- */
     /*---- home stranica tablet ---- */
     /* ----------------------------- */
@@ -653,7 +674,7 @@ nav{
     
         .description{
             grid-column: 2 / 10;
-            grid-row: 2 / 9;
+            grid-row: 2 / 6;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -678,7 +699,7 @@ nav{
     
           
         #explore{
-        grid-row: 9;
+        grid-row: 6;
         grid-column: 5;
         height: 44em;
         width: 44em;
