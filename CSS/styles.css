@@ -15,6 +15,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@00&family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 
 /* -------------------- */
@@ -108,13 +110,13 @@ nav{
 
 
     list-style-type: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     
 }
 
 .navigation li{
     height: 100%;
-    width: 15%;
+    width: 20%;
 
     color: gray;
 
@@ -362,7 +364,7 @@ nav{
 
 .destination-crew{
 
-    grid-column: 2 / 10;
+    grid-column: 2 / 12;
     grid-row: 2 / 7;
 
     color: white;
@@ -381,9 +383,8 @@ nav{
 }
 
 #crew-fig{
-    grid-column: 11 / 19;
+    grid-column: 12 / 20;
     grid-row: 1 / 11;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,14 +405,17 @@ nav{
 
 #crew-title{
     opacity: 0.5;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 200;
 }
 
 #crew-name{
-    font-size: 2.5em;
+    font-size: 3.5em;
+    font-weight: 300;
 }
 
  #crew-title, #crew-name{
+    font-family: 'Bellefair', serif;
     margin-bottom: 1em;
 }
 
@@ -430,7 +434,9 @@ nav{
 }
 
 #crew-description{
-    font-size: 1.4em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    font-size: 1.7em;
     line-height: 1.5;
     margin-bottom: 3em;
     height: 7em;
@@ -623,7 +629,7 @@ nav{
 
     .navigation li{
         height: 100%;
-        width: 25%;
+        width: 20%;
     
         color: gray;
     
@@ -633,6 +639,7 @@ nav{
         align-items: center;
         
         text-align: center;
+        /* font-size: 1em; */
     }
     
     .navigation li:last-of-type{
@@ -640,7 +647,7 @@ nav{
     }
 
     /* ----------------------------- */
-    /*---- home stranica tablet ---- */
+    /*---- home page tablet ---- */
     /* ----------------------------- */
     
         #page1{
@@ -653,11 +660,15 @@ nav{
         }
         
         #page1 .navigation{
-            font-size: 2.5em;
+            font-size: 13px;
+        }
+        
+        #page1 .navigation li{
+            font-size: 1.3em;
         }
 
         .navigation{
-            font-size: 1.5em;
+            font-size: 1.3em;
             width: 65%;
         }
     
@@ -706,7 +717,7 @@ nav{
         }
     
     /* ------------------------------- */
-    /*-- destination stranica tablet - */
+    /*-- destination page tablet - */
     /* ------------------------------ */
     #page2{
         overflow: visible;
@@ -716,7 +727,6 @@ nav{
     .destination-select {
         align-items: center;
         justify-content: center;
-    
     }
     
     .dest-image{
@@ -734,7 +744,6 @@ nav{
         grid-column: 4 / 19;
         grid-row: 8 / 15;
     }
-    }
 
 
     h1{
@@ -743,12 +752,75 @@ nav{
         font-size: 20px;
     }
 
-@media only screen and (max-width: 1000px){
-    .destination-crew {
-        grid-column: 2 / 10;
-        grid-row: 2 / 8;
-    }
 
+/* ------------------------------- */
+/*-- crew page tablet - */
+/* ------------------------------ */
+
+.destination-crew{
+    grid-row: 1 / 6;
+    grid-column: 2 / 20;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.destination-select{
+    margin-top: -10%;
+}
+
+#crew-name, #crew-title{
+    margin: 0;
+}
+
+.destination-crew h1 {
+    font-size: 2em;
+}
+
+#crew-fig{
+    grid-row: 5 / 9;
+    grid-column: 6 / 17;
+}
+
+#crew-fig img{
+    height: 90%;
+}
+
+.crew-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    height: fit-content;
+    font-size: 0.8em;
+}
+
+.crew-info-container{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#crew-description{
+    width: auto
+}
+
+#crew-name, #crew-title {
+    margin: 0 0 0.5em 0;
+}
+
+/* ------------------------------- */
+/*-- crew page tablet - */
+/* ------------------------------ */
+}
+
+
+@media only screen and (max-width: 1000px){
     .navigation{ 
         width: 60%;
     }
@@ -757,4 +829,9 @@ nav{
         display: none;
     }
 }
+
+
+
+
+
 
