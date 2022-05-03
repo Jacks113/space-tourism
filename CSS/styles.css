@@ -97,7 +97,7 @@ nav{
 }
 
 .navigation{
-    width: 50%;
+    width: 65%;
     height: 100%;
     
     backdrop-filter: blur(50px);
@@ -111,7 +111,16 @@ nav{
 
     list-style-type: none;
     font-size: 1.1em;
-    
+}
+
+#nav-line{
+    position: relative;
+    left: 3%;
+    width: 34%;
+    height: 1px;
+    z-index: 100;
+    background-color: white;
+    opacity: 0.4;
 }
 
 .navigation li{
@@ -311,12 +320,6 @@ nav{
     line-height: 1.9;
 }
 
-#dest-descript hr{
-    opacity: 0.2;
-    height: 2px;
-    background-color: white;
-    margin: 1em 0;
-}
 
 .planet-info{
     margin-top: 0.5em;
@@ -710,10 +713,10 @@ nav{
     
           
         #explore{
-        grid-row: 6;
-        grid-column: 5;
-        height: 44em;
-        width: 44em;
+            grid-row: 7;
+            grid-column: 5;
+            height: 44em;
+            width: 44em;
         }
     
     /* ------------------------------- */
