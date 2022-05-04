@@ -879,7 +879,7 @@ nav{
 }
 
 .technology{
-    grid-row: 8 / 14;
+    grid-row: 8 / 15;
     grid-column: 1 / 20;
 
     display: flex;
