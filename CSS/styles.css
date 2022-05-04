@@ -681,7 +681,8 @@ nav{
             background-image: url("../assets/home/background-home-tablet.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            height: 1075px;
+            height: 100vh;
+        
         }
         
         #page1 .navigation{
@@ -734,6 +735,10 @@ nav{
             grid-column: 5;
             height: 44em;
             width: 44em;
+        }
+
+        .explore-button span{
+            font-size: 2em;
         }
     
     /* ------------------------------- */
