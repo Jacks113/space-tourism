@@ -635,15 +635,16 @@ nav{
     /* ----------------------------- */
     /*--------- basic styles ------- */
     /* ----------------------------- */
-
-        .navigation{ 
-            width: 60%;
-        }
         
         .view{
             display: none;
         }
 
+        
+        .navigation{
+            font-size: 1.3em;
+            width: 70%;
+        }
         
         #nav-line{
             display: none;
@@ -689,11 +690,6 @@ nav{
         
         #page1 .navigation li{
             font-size: 1.3em;
-        }
-
-        .navigation{
-            font-size: 1.3em;
-            width: 65%;
         }
     
         #page1 main{
