@@ -244,7 +244,7 @@ nav{
     /* align-items: center; */
 
     grid-column: 2 / 10;
-    grid-row: 2 / 11;
+    grid-row: 2 / 7;
 }
 
 .dest-image img{
@@ -882,6 +882,7 @@ nav{
     grid-row: 8 / 15;
     grid-column: 1 / 20;
 
+    display: flex;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
