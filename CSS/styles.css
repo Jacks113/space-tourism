@@ -244,15 +244,14 @@ nav{
     /* align-items: center; */
 
     grid-column: 2 / 10;
-    grid-row: 2 / 10;
+    grid-row: 2 / 13;
 }
 
 .dest-image img{
-    margin-top: 10%;
 
     justify-self: flex-end;
     align-self: center;
-    width: 65%;
+    width: 60%;
 }
 
 
@@ -631,6 +630,18 @@ nav{
 /* ----------------------------- */
 
 
+@media only screen and (max-width: 1100px){
+    .dest-image{
+        grid-column: 2 / 10;
+        grid-row: 2 / 11;
+    }
+
+    .dest-image img{
+        margin-top: 0;
+        width: 90%;
+    }
+    
+}
 @media only screen and (max-width: 900px){
     /* ----------------------------- */
     /*--------- basic styles ------- */
@@ -756,6 +767,11 @@ nav{
     
     .dest-image{
         grid-column: 2 / 19;
+        grid-row: 2 / 6;
+    }
+    
+    .dest-image img{
+        width: 60%;
     }
     
     #dest-planet{
@@ -767,7 +783,7 @@ nav{
     
     #dest-descript{
         grid-column: 4 / 19;
-        grid-row: 8 / 15;
+        grid-row: 6 / 15;
     }
 
 
@@ -798,6 +814,11 @@ nav{
 .destination-select{
     margin-top: -10%;
 }
+
+.dest-image{
+    grid-row: 2 / 5;
+}
+
 
 #crew-name, #crew-title{
     margin: 0;
