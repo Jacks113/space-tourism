@@ -944,10 +944,15 @@ nav{
     #page1{
         height: 700px;
         overflow: hidden;
-        font-size: 8px;
+        font-size: 2vw;
     }
 
     .description p:first-of-type{
         font-size: 2em;
+    }
+
+
+    #explore{
+        grid-row: 6;
     }
 }

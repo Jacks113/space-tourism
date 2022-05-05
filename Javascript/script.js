@@ -58,7 +58,9 @@ function changeTechnology(technologyIndex){
         {
             document.getElementById("technology-name").innerHTML= data.technology[technologyIndex].name;
             document.getElementById("technology-description").innerHTML= data.technology[technologyIndex].description;
-            document.getElementById("technology-img").src= "." +data.technology[technologyIndex].images.portrait;
+            document.getElementById("technology-img").src = "." + data.technology[technologyIndex].images.portrait;
+            document.getElementById("source-resp").srcset = "." + data.technology[technologyIndex].images.landscape;
+            
             
             
 
