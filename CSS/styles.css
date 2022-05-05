@@ -757,7 +757,7 @@ nav{
     /* ------------------------------ */
     #page2{
         overflow: visible;
-        height: auto;
+        height: 1200px;
     }
     
     .destination-select {
@@ -774,6 +774,15 @@ nav{
         width: 60%;
     }
     
+    #page2 .dest-image{
+        grid-column: 2 / 19;
+        grid-row: 2 / 8;
+    }
+    
+    #page2 .dest-image img{
+        width: 55%;
+    }
+    
     #dest-planet{
         align-self: center;
         font-size: 4em;
@@ -784,6 +793,11 @@ nav{
     #dest-descript{
         grid-column: 4 / 19;
         grid-row: 6 / 15;
+    }
+    
+    #page2 #dest-descript{
+        grid-column: 4 / 19;
+        grid-row: 9 / 15;
     }
 
 
@@ -801,7 +815,11 @@ nav{
 #page3{
     /* overflow: hidden; */
     height: 1000px;
-    overflow: hidden;
+    overflow: visible;
+}
+
+#page3 main{
+    height: 100%;
 }
 
 .destination-crew{
@@ -829,7 +847,7 @@ nav{
 }
 
 #crew-fig{
-    grid-row: 9 / 16;
+    grid-row: 7 / 15;
     grid-column: 6 / 17;
 }
 
@@ -849,7 +867,7 @@ nav{
 }
 
 .crew-info-container{
-    height: 65%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -870,8 +888,8 @@ nav{
 /*-- technology page tablet - */
 /* ------------------------------ */
 #page4{
-    height: 1000px;
-    /* overflow: hidden; */
+    height: auto;
+    overflow: visible;
 }
 
 #page4 main{
@@ -942,13 +960,37 @@ nav{
 
 @media only screen and (max-width: 500px){
     #page1{
-        height: 700px;
+        height: auto;
+        overflow: visible;
+        font-size: 1vw;
+    }
+
+    /* #page2{
+        height: auto;
         overflow: hidden;
-        font-size: 2vw;
+        font-size: 1vw;
+    } */
+
+    /* #page3{
+        height: auto;
+        overflow: hidden;
+        font-size: 1vw;
+    } */
+
+
+/* page 2 destination */
+    #page2 .dest-image {
+        grid-column: 2 / 19;
+        grid-row: 1 / 6;
+    }
+/* ------------------------ */
+    #page4{
+        height: auto;
+        overflow: visible;
     }
 
     .description p:first-of-type{
-        font-size: 2em;
+        font-size: 1em;
     }
 
 
