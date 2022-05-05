@@ -938,3 +938,16 @@ nav{
         align-self: auto;
     }
 }
+
+
+@media only screen and (max-width: 500px){
+    #page1{
+        height: 700px;
+        overflow: hidden;
+        font-size: 8px;
+    }
+
+    .description p:first-of-type{
+        font-size: 2em;
+    }
+}
