@@ -966,11 +966,11 @@ nav{
     }
 
     header{
-        /* display: none; */
-        position: absolute;
+        display: none;
+        position: fixed;
         top: 0;
         right: 0;
-        height: 90vh;
+        height: 100vh;
         width: 60vw;
 
         backdrop-filter: blur(50px);
@@ -998,10 +998,15 @@ nav{
         align-items: center;
         width: 100%;
         overflow: hidden;
+        background-color: none;
     }
 
     .navigation li:last-of-type{
         margin-right: 0;
+    }
+
+    .colored-nav{
+        background-color: transparent
     }
 
     /* #page2{
@@ -1037,8 +1042,20 @@ nav{
         grid-row: 6;
     }
 
+/* home mobile */
+.description {
+    grid-row: 1 / 6 ;
+}
 
-    /* destination */
+.description p:first-of-type {
+    font-size: 4em;
+}
+
+.description p{
+    font-size: 3em;
+}
+
+ /* destination mobile */
     #page2 #dest-descript {
     grid-column: 4 / 19;
     grid-row: 7 / 15;
