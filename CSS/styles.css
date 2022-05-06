@@ -965,6 +965,7 @@ nav{
         font-size: 1vw;
     }
 
+
     header{
         display: none;
         position: fixed;
@@ -1009,6 +1010,10 @@ nav{
         background-color: transparent
     }
 
+    .explore-button span{
+        font-size: 1em;
+    }
+    
 
     /* navigation hamburger */
 
