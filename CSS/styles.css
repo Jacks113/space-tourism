@@ -959,9 +959,9 @@ nav{
 
 
 @media only screen and (max-width: 500px){
-    #page1{
-        height: auto;
-        overflow: visible;
+    #page1 {
+        height: 100vh;
+        overflow: hidden;
         font-size: 1vw;
     }
 
@@ -1007,6 +1007,14 @@ nav{
 
     .colored-nav{
         background-color: transparent
+    }
+
+
+    /* navigation hamburger */
+
+    #menu-toggle span{
+        width: 33px;
+        height: 10px;
     }
 
     /* #page2{
