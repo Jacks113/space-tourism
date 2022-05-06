@@ -965,6 +965,9 @@ nav{
         font-size: 1vw;
     }
 
+    #page1 main {
+        overflow: visible;
+    }
 
     header{
         display: none;
@@ -1015,6 +1018,9 @@ nav{
     }
     
 
+    #explore {
+        grid-row: 5;
+    }
     /* navigation hamburger */
 
     #menu-toggle span{
