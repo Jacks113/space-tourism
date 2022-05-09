@@ -910,8 +910,8 @@ nav{
 }
 
 #page4 main h1{
-    grid-row: 2 / 2;
-    grid-column: 1 / 10;
+    grid-row: 2;
+    grid-column: 1 / 20;
     align-self: flex-start;
     text-transform: uppercase;
     color: white;
