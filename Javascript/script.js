@@ -83,6 +83,7 @@ function changeTechnology(technologyIndex){
 
 
 document.getElementById("menuToggle").addEventListener("click", function(){
+    var spans = document.getElementsByClassName("normalMenu");
     var el = document.getElementById("header-nav");
     if (el.classList.contains("showNav")) {
         el.classList.remove("showNav");
@@ -90,5 +91,10 @@ document.getElementById("menuToggle").addEventListener("click", function(){
     else{
         el.classList.add("showNav");
     }
+    
+    spans[0].classList.toggle("open1");
+    spans[1].classList.toggle("open2");
+    spans[2].classList.toggle("open3");
+    
     
 })
