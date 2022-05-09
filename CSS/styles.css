@@ -1144,7 +1144,7 @@ nav{
 /* PAGE 2 ----- destination */
     #page2 .dest-image {
         grid-column: 2 / 19;
-        grid-row: 1 / 6;
+        grid-row: 2 / 6;
     }
 /* ------------------------ */
     #page4{
