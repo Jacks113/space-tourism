@@ -1004,6 +1004,8 @@ nav{
         display: flex;
         flex-direction: column;
         pointer-events: auto;
+        transition-property: transform(translate);
+        transition: 200ms ease-in;
     }
 
     main{
