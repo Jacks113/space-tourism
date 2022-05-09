@@ -69,6 +69,10 @@ body{
     background-size: cover;
 }
 
+header{
+    height: 10%;
+}
+
 main{
     height: 90%;
     display: grid;
@@ -819,7 +823,7 @@ nav{
 }
 
 #page3 main{
-    height: 100%;
+    height: 90%;
 }
 
 .destination-crew{
@@ -847,7 +851,7 @@ nav{
 }
 
 #crew-fig{
-    grid-row: 7 / 15;
+    grid-row: 7 / 16;
     grid-column: 6 / 17;
 }
 
@@ -888,12 +892,12 @@ nav{
 /*-- technology page tablet - */
 /* ------------------------------ */
 #page4{
-    height: auto;
-    overflow: visible;
+    height: 1000px;
+    overflow: auto;
 }
 
 #page4 main{
-    height: 95%;
+    height: 900px;
     grid-template-rows: repeat(15, 1fr);
 }
 
@@ -908,7 +912,7 @@ nav{
 
 #tech-fig{
     grid-column: 1 / 21;
-    grid-row: 2 / 8;
+    grid-row: 3 / 8;
 }
 
 
@@ -936,7 +940,7 @@ nav{
 }
 
 .technology-select{
-    height: 30%;
+    height: 38%;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1079,4 +1083,5 @@ nav{
     grid-column: 4 / 19;
     grid-row: 7 / 15;
 }
+
 }
