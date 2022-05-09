@@ -18,11 +18,19 @@
 <body id="page3">
 
 
-  <header>
+  <header id = "header-nav">
+    <div class="invisible" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <nav>
       <figure class="logo-nav">
         <img src="../assets/shared/logo.svg" alt="logo-company"/>
       </figure>
+
+
       <hr id="nav-line" />
       <ul class="navigation colored-nav">
         <li><a href="../index.html"><span class="view"><strong class="transparent">00</strong></span> Home</a></li>
@@ -34,6 +42,10 @@
   </header>
  
   <main>
+    <figure onclick="window.location.href='/index.html'" class="mobile-logo">
+      <img src="../assets/shared/logo.svg" alt="logo-company"/>
+    </figure>
+
     <figure id="crew-fig" class="dest-image crew low-bottom">
         <img id="crew-img" src="../assets/crew/image-douglas-hurley.webp" alt="destination-image" >
         <hr class="hr-view" />

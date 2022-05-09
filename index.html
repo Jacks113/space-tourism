@@ -6,13 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="CSS/styles.css">
-  
+  <script src="Javascript/script.js" defer></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body id="page1">
 
-  <header>
-    <div id="menuToggle">
+  <header id="header-nav">
+    <div class="invisible" id="menuToggle">
       <span></span>
       <span></span>
       <span></span>
@@ -21,7 +22,9 @@
         <figure onclick="window.location.href='/index.html'" class="logo-nav">
           <img src="./assets/shared/logo.svg" alt="logo-company"/>
         </figure>
+
         <hr id="nav-line" />
+
         <ul id="navigation" class="navigation">
           <li class="marked"><a href="#"><span class="view"><strong class="transparent">00</strong></span> Home</a></li>
           <li><a href="./Pages/destination.html"><span class="view"><strong class="transparent">01</strong></span> Destination</a></li>
@@ -32,6 +35,10 @@
   </header>
  
   <main>
+    <figure onclick="window.location.href='/index.html'" class="mobile-logo">
+      <img src="./assets/shared/logo.svg" alt="logo-company"/>
+    </figure>
+
     <div class="description left">
       <p>So, you want to travel to</p>
       <h1>Space</h1> 

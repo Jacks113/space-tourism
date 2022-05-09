@@ -80,3 +80,15 @@ function changeTechnology(technologyIndex){
         );
 
 }
+
+
+document.getElementById("menuToggle").addEventListener("click", function(){
+    var el = document.getElementById("header-nav");
+    if (el.classList.contains("showNav")) {
+        el.classList.remove("showNav");
+    }
+    else{
+        el.classList.add("showNav");
+    }
+    
+})
