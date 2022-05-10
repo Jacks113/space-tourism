@@ -842,7 +842,7 @@ nav{
 #page3{
     /* overflow: hidden; */
     height: 1000px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 #page3 main{
