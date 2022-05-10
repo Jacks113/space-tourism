@@ -358,7 +358,7 @@ nav{
 
 
 .planet-info{
-    margin-top: 12%;
+    margin-top: 10em;
     height: 600px;
     color: whitesmoke;
     display: flex;
@@ -1257,6 +1257,7 @@ nav{
 .destination-select{
     grid-column: 1 / 5;
     grid-row: 1 / 2;
+    margin-top: 0;
 }
 
 #crew-description{
