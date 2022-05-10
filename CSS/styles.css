@@ -1212,4 +1212,9 @@ nav{
     body{
         font-size: 9px;
     }
+
+    .navigation {
+        width: 65%;
+        height: 40%;
+    }
 }
