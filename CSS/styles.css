@@ -159,8 +159,6 @@ nav{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    width: 100%;
-    text-align: left;
 }
 
 
@@ -359,7 +357,7 @@ nav{
 
 
 .planet-info{
-    margin-top: 10em;
+    margin-top: 1em;
     height: 600px;
     color: whitesmoke;
     display: flex;
@@ -374,10 +372,11 @@ nav{
 
 .infos{
     width: 95%;
+    height: 30%;
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info h3{
@@ -1065,6 +1064,11 @@ nav{
         font-size: 0.8em;
     }
 
+    .navigation li a{
+        width: 100%;
+        text-align: left;
+    }
+
     .invisible{
         display: block;
         position: fixed;
@@ -1217,8 +1221,10 @@ nav{
 }
 .planet-info{
     margin-top: 2em;
+    margin-left: 5%;
     height: 90%;
 }
+
 
 
 .destination-select {
@@ -1226,6 +1232,22 @@ nav{
     grid-row: auto;
 }
 
+.infos{
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+
+.info{
+    align-items: center;
+    width: 95%;
+}
+
+
+.info h3{
+    font-size: 2em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
 
 /* PAGE 3 -------- crew */
 .crew-info-container{
