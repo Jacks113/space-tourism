@@ -1211,7 +1211,11 @@ nav{
 }
 
  /* destination mobile */
-    #page2 #dest-descript {
+ #page2{
+    height: 1250px;
+ }
+
+#page2 #dest-descript {
     grid-column: 1 / 20;
     grid-row: 7 / 16;
 }
@@ -1234,7 +1238,7 @@ nav{
 
 .infos{
     justify-content: space-evenly;
-    height: 60%;
+    height: 500px;
 }
 
 
