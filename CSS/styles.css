@@ -906,7 +906,7 @@ nav{
 }
 
 .crew-info-container{
-    height: 80%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1248,7 +1248,7 @@ nav{
 
 #crew-fig img{
     width: 50%;
-    max-height: 95%;
+    max-height: 90%;
 }
 
 .destination-crew {
@@ -1266,7 +1266,7 @@ nav{
 
 #crew-description{
     text-align: justify;
-    font-size: 2.3em;
+    font-size: 2em;
 }
 
 #crew-name{
