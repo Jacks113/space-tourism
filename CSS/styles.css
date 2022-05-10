@@ -841,8 +841,8 @@ nav{
 
 #page3{
     /* overflow: hidden; */
-    height: 1000px;
-    overflow: hidden;
+    height: 1050px;
+    overflow: visible;
 }
 
 #page3 main{
