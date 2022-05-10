@@ -345,6 +345,9 @@ nav{
     text-align: left;
 }
 
+#dest-descript{
+    padding: 5px;
+}
 
 #dest-description{
     line-height: 1.9;
