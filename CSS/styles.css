@@ -1261,6 +1261,7 @@ nav{
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     margin-top: 0;
+    justify-content: space-evenly;
 }
 
 .radio input[type=radio] + .radio-label:before{
