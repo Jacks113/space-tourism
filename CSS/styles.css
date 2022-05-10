@@ -1188,7 +1188,7 @@ nav{
 }
 
 .description p{
-    font-size: 3em;
+    font-size: 4em;
 }
 
  /* destination mobile */
@@ -1250,12 +1250,12 @@ nav{
 
 #crew-description{
     text-align: justify;
-    font-size: 2.5em;
-    height: 8em;
+    font-size: 2.3em;
 }
 
 #crew-name{
-    font-size: 3em;
+    font-size: 2.9em;
+    margin: 0.5em 0;
 }
 
 .hr-view{
