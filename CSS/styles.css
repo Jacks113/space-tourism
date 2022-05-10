@@ -253,7 +253,7 @@ nav{
     color: whitesmoke;
     text-transform: uppercase;
 
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1 / 20;
 }
 /* ----------------------------- */
@@ -838,6 +838,7 @@ nav{
 /*-- crew page tablet - */
 /* ------------------------------ */
 
+
 #page3{
     /* overflow: hidden; */
     height: 1000px;
@@ -847,6 +848,11 @@ nav{
 #page3 main{
     height: 90%;
 }
+
+.title{
+    grid-row: 1;
+}
+
 
 .destination-crew{
     grid-row: 1 / 9;
@@ -875,10 +881,6 @@ nav{
 #crew-fig{
     grid-row: 7 / 16;
     grid-column: 6 / 17;
-}
-
-#crew-fig img{
-    height: 90%;
 }
 
 .crew-info{
@@ -1138,21 +1140,6 @@ nav{
     #explore{
         grid-row: 6;
     }
-    /* navigation hamburger */
-
-
-    /* #page2{
-        height: auto;
-        overflow: hidden;
-        font-size: 1vw;
-    } */
-
-    /* #page3{
-        height: auto;
-        overflow: hidden;
-        font-size: 1vw;
-    } */
-
 
 /* PAGE 2 ----- destination */
     #page2 .dest-image {
@@ -1171,6 +1158,9 @@ nav{
 
 
 /* PAGE 3 ------ crew */
+.title{
+    grid-row: 3;
+}
 
 .destination-crew{
     grid-row: 2 / 11;
@@ -1217,7 +1207,7 @@ nav{
 
 .crew-info{
     grid-column: 1 / 5;
-    grid-row: 2 /4;
+    grid-row: 3 / 4;
     width: auto;
     margin-top: 3em;
 }
@@ -1228,8 +1218,15 @@ nav{
 }
 
 #crew-fig img{
-    width: 70%;
-    height: 83%;
+    width: 50%;
+    max-height: 95%;
+}
+
+.destination-crew {
+    grid-row: 9 / 15;
+    grid-column: 2 / 20;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .destination-select{
@@ -1289,6 +1286,7 @@ nav{
     body{
         font-size: 9px;
         min-width: 200px;
+        overflow: hidden;
     }
 
     .navigation {
@@ -1296,20 +1294,5 @@ nav{
         height: 40%;
     }
 
-    #crew-fig {
-        grid-row: 4 / 8;
-        grid-column: 2 / 20;
-    }
-
-    #crew-fig img{
-        width: 70%;
-        height: 83%;
-    }
-
-    .destination-crew {
-        grid-row: 8 / 15;
-        grid-column: 2 / 20;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+   
 }
