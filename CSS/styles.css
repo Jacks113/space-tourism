@@ -170,6 +170,8 @@ nav{
     border-bottom: 2px solid white;
 }
 
+
+
 /* ----------------------------- */
 /*------- home text styles ----- */
 /* ------------------------------ */
@@ -242,6 +244,18 @@ nav{
     text-transform: uppercase;
 }
 
+.title{
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+
+    color: whitesmoke;
+    text-transform: uppercase;
+
+    grid-row: 3;
+    grid-column: 1 / 20;
+}
 /* ----------------------------- */
 /*--- destination page styles -- */
 /* ----------------------------- */
@@ -779,7 +793,7 @@ nav{
     
     .dest-image{
         grid-column: 2 / 19;
-        grid-row: 2 / 6;
+        grid-row: 1 / 6;
     }
     
     .dest-image img{
@@ -788,7 +802,7 @@ nav{
     
     #page2 .dest-image{
         grid-column: 2 / 19;
-        grid-row: 2 / 8;
+        grid-row: 1 / 8;
     }
     
     #page2 .dest-image img{
@@ -1120,9 +1134,8 @@ nav{
         font-size: 1em;
     }
     
-
-
-    #explore {
+         
+    #explore{
         grid-row: 5;
     }
     /* navigation hamburger */
@@ -1157,11 +1170,6 @@ nav{
     }
 
 
-    #explore{
-        grid-row: 6;
-    }
-
-
 /* PAGE 3 ------ crew */
 
 .destination-crew{
@@ -1182,7 +1190,7 @@ nav{
 
 /* home mobile */
 .description {
-    grid-row: 1 / 6 ;
+    grid-row: 2 / 5 ;
 }
 
 .description p:first-of-type {
@@ -1199,6 +1207,39 @@ nav{
     grid-row: 7 / 15;
 }
 
+
+/* PAGE 3 -------- crew */
+.crew-info-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.crew-info{
+    grid-column: 1 / 5;
+    grid-row: 2 /4;
+    width: auto;
+    margin-top: 3em;
+}
+
+#crew-fig{
+    grid-row: 4 / 8;
+}
+
+.destination-select{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+#crew-description{
+    text-align: justify;
+    font-size: 2.5em;
+    height: 8em;
+}
+
+#crew-name{
+    font-size: 3em;
+}
 }
 
 
@@ -1216,5 +1257,17 @@ nav{
     .navigation {
         width: 65%;
         height: 40%;
+    }
+
+    #crew-fig {
+        grid-row: 4 / 8;
+        grid-column: 3 / 20;
+    }
+
+    .destination-crew {
+        grid-row: 8 / 15;
+        grid-column: 2 / 20;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
