@@ -989,7 +989,7 @@ nav{
     #page1 {
         height: 100vh;
         overflow: hidden;
-        font-size: 1vw;
+        font-size: 3px;
     }
 
     #page1 main {
@@ -1136,7 +1136,7 @@ nav{
     
          
     #explore{
-        grid-row: 5;
+        grid-row: 6;
     }
     /* navigation hamburger */
 
@@ -1222,8 +1222,14 @@ nav{
     margin-top: 3em;
 }
 
-#crew-fig{
+#crew-fig {
     grid-row: 4 / 8;
+    grid-column: 2 / 20;
+}
+
+#crew-fig img{
+    width: 70%;
+    height: 83%;
 }
 
 .destination-select{
@@ -1240,6 +1246,36 @@ nav{
 #crew-name{
     font-size: 3em;
 }
+
+.hr-view{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+/* PAGE 4 -------- technology */
+#tech-fig {
+    justify-content: center;
+}
+#tech-fig img{
+    width: 100%;
+    height: 50%;
+}
+
+#technology-title{
+    font-size: 1.5em;
+}
+
+#technology-name {
+    font-size: 3em;
+}
+
+#technology-description{
+    font-size: 1.7em;
+}
 }
 
 
@@ -1252,6 +1288,7 @@ nav{
 @media only screen and (max-width:300px) {
     body{
         font-size: 9px;
+        min-width: 200px;
     }
 
     .navigation {
@@ -1261,7 +1298,12 @@ nav{
 
     #crew-fig {
         grid-row: 4 / 8;
-        grid-column: 3 / 20;
+        grid-column: 2 / 20;
+    }
+
+    #crew-fig img{
+        width: 70%;
+        height: 83%;
     }
 
     .destination-crew {
