@@ -1247,8 +1247,7 @@ nav{
 }
 
 #crew-fig img{
-    width: 50%;
-    max-height: 90%;
+    height: 90%;
 }
 
 .destination-crew {
