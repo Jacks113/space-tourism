@@ -358,7 +358,7 @@ nav{
 
 
 .planet-info{
-    margin-top: 0.5em;
+    margin-top: 12%;
     height: 600px;
     color: whitesmoke;
     display: flex;
@@ -1015,9 +1015,10 @@ nav{
     .mobile-logo{
         display: block;
         grid-row: 1;
-        position: absolute;
+        position: fixed;
         left: 2%;
         top: 1%;
+        opacity: 0.5;
     }
 
     header{
@@ -1065,7 +1066,7 @@ nav{
 
     .invisible{
         display: block;
-        position: absolute;
+        position: fixed;
     }
 
     #menuToggle{
@@ -1318,6 +1319,8 @@ nav{
         width: 65%;
         height: 40%;
     }
+
+    .nav{margin-top: 0;}
 
    
 }
