@@ -1263,6 +1263,11 @@ nav{
     margin-top: 0;
 }
 
+.radio input[type=radio] + .radio-label:before{
+    width: 2em;
+    height: 2em;
+}
+
 #crew-description{
     text-align: justify;
     font-size: 2em;
