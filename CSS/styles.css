@@ -159,6 +159,8 @@ nav{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    width: 100%;
+    text-align: left;
 }
 
 
@@ -787,7 +789,7 @@ nav{
     /* ------------------------------ */
     #page2{
         overflow: visible;
-        height: 1200px;
+        height: 1100px;
     }
     
     .destination-select {
@@ -810,7 +812,7 @@ nav{
     }
     
     #page2 .dest-image img{
-        width: 55%;
+        width: 45%;
     }
     
     #dest-planet{
@@ -830,6 +832,9 @@ nav{
         grid-row: 9 / 15;
     }
 
+    .info{
+        width: 45%;
+    }
 
     h1{
         font-family: 'Barlow Condensed', sans-serif; 
@@ -920,7 +925,7 @@ nav{
 /*-- technology page tablet - */
 /* ------------------------------ */
 #page4{
-    height: 1000px;
+    height: 1021px;
     overflow: auto;
 }
 
@@ -1290,6 +1295,7 @@ nav{
 
 #technology-description{
     font-size: 1.7em;
+    text-align: justify;
 }
 }
 
