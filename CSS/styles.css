@@ -1167,9 +1167,9 @@ nav{
     
          
     #explore{
-        grid-row: 6;
-        height: 40vw;
-        width: 40vw;
+        grid-row: 5;
+        height: 50vw;
+        width: 50vw;
     }
 
 /* PAGE 2 ----- destination */
