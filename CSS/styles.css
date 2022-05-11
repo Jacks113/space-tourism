@@ -826,7 +826,7 @@ nav{
     }
     
     #page2 .dest-image img{
-        width: 45%;
+        width: 60%;
     }
     
     #dest-planet{
@@ -1178,7 +1178,7 @@ nav{
 }
     #page2 .dest-image {
         grid-column: 2 / 19;
-        grid-row: 2 / 6;
+        grid-row: 2 / 7;
     }
 /* ------------------------ */
     #page4{
@@ -1218,7 +1218,7 @@ nav{
 }
 
 .description p:first-of-type {
-    font-size: 8em;
+    font-size: 6em;
 }
 
 .description p{
