@@ -7,4 +7,6 @@ Technologies used:
   - Javascript
   - CSS Grid
  
- Live page hoseted on jack-space.netlify.app
+ Live page hosted on :
+ 
+  - jack-space.netlify.app
