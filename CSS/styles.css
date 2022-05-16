@@ -523,6 +523,13 @@ nav{
     justify-self: flex-end;
 }
 
+#space-title{
+    text-transform: uppercase;
+    grid-row: 2 / 2;
+    grid-column: 2 / 20;
+    color: white;
+}
+
 
 /* ----------------------------- */
 /*- technology selecting div --- */
@@ -530,15 +537,12 @@ nav{
 
 .technology{
     grid-column: 2 / 12;
-    grid-row: 2 / 15;
-
+    grid-row: 3 / 15;
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
     margin-bottom: 1em;
 }
 
